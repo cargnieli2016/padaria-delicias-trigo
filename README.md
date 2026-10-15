@@ -16,11 +16,7 @@ npm run dev
 
 ## GitHub Pages
 
-The standalone page in `static/index.html` is published to GitHub Pages by the
-workflow in `.github/workflows/deploy-pages.yml` whenever changes to `static/`,
-`img/`, or the workflow itself are pushed to `main`.
-
-In the repository settings, set **Pages → Build and deployment → Source** to
-**GitHub Actions**. The published site will be available at
-https://cargnieli2016.github.io/padaria-delicias-trigo/ after the workflow
-completes.
+GitHub Pages publishes from the root of the `main` branch. The root
+`index.html` redirects visitors to the standalone site in `static/index.html`.
+The page and its photos are published at
+https://cargnieli2016.github.io/padaria-delicias-trigo/.
