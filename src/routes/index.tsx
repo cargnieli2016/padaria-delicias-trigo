@@ -1,24 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+import { createFileRoute } from '@tanstack/react-router';
+import { HomeHero, ValuesStrip, ProductSection, AboutSection, GallerySection, ContactSection } from '@/components/bakery/content';
+import { pageHead } from '@/lib/bakery';
+export const Route = createFileRoute('/')({ head: () => pageHead('Padaria e confeitaria em Monte Mor', 'Conheça a Delícias do Trigo: pães artesanais, confeitaria, cafés especiais e um espaço acolhedor no Jardim Paviotti, em Monte Mor.'), component: Index });
+function Index() { return <><HomeHero /><ValuesStrip /><ProductSection /><AboutSection /><GallerySection /><ContactSection /></>; }
