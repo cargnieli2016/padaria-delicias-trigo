@@ -1,10 +1,10 @@
 export const bakery = {
   name: 'Delícias do Trigo',
-  street: 'R. Anardino José Machado, 50',
+  street: 'R. Anardino José Machado, 40',
   neighborhood: 'Jardim Paviotti',
   city: 'Monte Mor - SP',
   postalCode: '13190-000',
-  address: 'R. Anardino José Machado, 50 - Jardim Paviotti, Monte Mor - SP, 13190-000',
+  address: 'R. Anardino José Machado, 40 - Jardim Paviotti, Monte Mor - SP, 13190-000',
   hours: '6h00 às 19h00',
   phone: '(19) 3979-8631',
   phoneHref: 'tel:+551939798631',
